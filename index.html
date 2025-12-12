@@ -5,28 +5,91 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Doba Integrated Developmental Organization</title>
     <style>
-        body { font-family: Arial, sans-serif; margin: 0; padding: 0; }
-        header { 
-            background: url('banner.jpg') no-repeat center center; 
-            background-size: cover; 
-            color: white; 
-            padding: 40px 20px; 
-            text-align: center; 
+        /* General body styling */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #e0f0ff; /* Internal base blue background */
+            color: #333;
+        }
+
+        /* Header with banner */
+        header {
+            background: url('banner.jpg') no-repeat center center;
+            background-size: cover;
+            color: white;
+            padding: 60px 20px;
+            text-align: center;
             position: relative;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.2);
         }
-        header img.logo { 
-            position: absolute; 
-            top: 20px; 
-            left: 20px; 
-            width: 80px; 
-            height: auto; 
+
+        header img.logo {
+            position: absolute;
+            top: 20px;
+            left: 20px;
+            width: 80px;
+            height: auto;
+            border-radius: 10px;
+            border: 2px solid white;
         }
-        nav a { margin: 0 15px; color: white; text-decoration: none; font-weight: bold; }
-        section { padding: 50px; text-align: center; }
-        .gallery img { width: 200px; margin: 10px; border-radius: 10px; }
-        footer { background-color: #333; color: white; text-align: center; padding: 20px; }
-        .contact-info { line-height: 1.8; }
-        h2 { color: #4CAF50; }
+
+        nav {
+            margin-top: 20px;
+        }
+
+        nav a {
+            margin: 0 15px;
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+            padding: 8px 12px;
+            border-radius: 5px;
+            transition: background 0.3s;
+        }
+
+        nav a:hover {
+            background-color: rgba(255,255,255,0.3);
+        }
+
+        /* Section styling */
+        section {
+            padding: 60px 20px;
+            text-align: center;
+            background-color: #e0f0ff; /* internal base blue */
+            border-bottom: 1px solid #c0d9ef;
+        }
+
+        section h2 {
+            color: #0077b6;
+            margin-bottom: 20px;
+        }
+
+        .gallery img {
+            width: 200px;
+            margin: 10px;
+            border-radius: 10px;
+            transition: transform 0.3s;
+        }
+
+        .gallery img:hover {
+            transform: scale(1.05);
+        }
+
+        /* Contact styling */
+        .contact-info {
+            line-height: 1.8;
+            font-size: 18px;
+        }
+
+        /* Footer styling */
+        footer {
+            background-color: #0077b6;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
     </style>
 </head>
 <body>
@@ -62,7 +125,6 @@
 <section id="gallery">
     <h2>Our Activities</h2>
     <div class="gallery">
-        <!-- Replace src with your images -->
         <img src="activity1.jpg" alt="Activity 1">
         <img src="activity2.jpg" alt="Activity 2">
         <img src="activity3.jpg" alt="Activity 3">
